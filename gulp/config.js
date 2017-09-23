@@ -3,9 +3,9 @@ module.exports = {
     bundle: 'bundle',
   },
   paths: {
-    compile: 'target/build',
+    compile: 'target/compile',
     dist: 'target/dist',
-    entry: 'src/main.ts',
+    entries: ['target/compile/main.js'],
   },
   serve: {
     port: 8080,

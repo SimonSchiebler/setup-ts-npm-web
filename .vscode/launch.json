@@ -5,10 +5,10 @@
             "type": "node",
             "request": "launch",
             "name": "Run program",
-            "program": "${workspaceRoot}/target/dist/bundle.js",
-            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/src/main.ts",
+            "preLaunchTask": "compile",
             "outFiles": [
-                "${workspaceRoot}/target/dist/**/*.js"
+                "${workspaceRoot}/target/compile/**/*.js"
             ]
         }
     ]

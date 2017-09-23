@@ -4,22 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "serve",
+            "taskName": "compile",
             "type": "shell",
-            "command": "gulp serve",
-            "group": "none",
-            "presentation": {
-                "echo": true,
-                "reveal": "never",
-                "focus": false,
-                "panel": "shared"
-            },
-            "problemMatcher": []
-        },
-        {
-            "taskName": "build",
-            "type": "shell",
-            "command": "gulp build",
+            "command": "gulp compile",
             "group": "build",
             "presentation": {
                 "echo": true,
@@ -29,9 +16,9 @@
             }
         },
         {
-            "taskName": "build:watch",
+            "taskName": "default",
             "type": "shell",
-            "command": "gulp build:watch",
+            "command": "gulp default",
             "group": {
                 "kind": "build",
                 "isDefault": true
