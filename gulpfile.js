@@ -1,7 +1,12 @@
 const gulp = require('gulp');
+const series = require('run-sequence');
 
-require('./gulp/build');
+require('./gulp/compile');
+require('./gulp/bundle');
 require('./gulp/clean');
 require('./gulp/serve');
 
-gulp.task('default', ['build:watch']);
+gulp.task('build', done => series('compile', 'bundle', done));
+gulp.task('build:watch', done => series('compile:watch', 'bundle:watch', done));
+gulp.task('watch', ['build:watch']);
+gulp.task('default', done => series('watch', 'serve', done));
