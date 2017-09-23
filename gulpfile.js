@@ -7,5 +7,6 @@ require('./gulp/clean');
 require('./gulp/serve');
 
 gulp.task('build', done => series('compile', 'bundle', done));
-gulp.task('watch', done => series('compile:watch', 'bundle:watch', done));
+gulp.task('build:watch', done => series('compile:watch', 'bundle:watch', done));
+gulp.task('watch', ['build:watch']);
 gulp.task('default', done => series('watch', 'serve', done));

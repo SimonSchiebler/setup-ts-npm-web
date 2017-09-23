@@ -33,7 +33,7 @@ gulp build
 #### Watch for changes
 
 ```node
-gulp build:watch
+gulp watch
 ```
 
 ### Tricks
@@ -44,13 +44,19 @@ gulp build:watch
 gulp serve
 ```
 
+#### Watch for changes and open in browser
+
+```node
+gulp default
+```
+
 ## Authors
 
 * **Robin Hartmann** - *Initial work* - [RobinHartmann](https://github.com/RobinHartmann)
 
 ## License
 
-This project does **NOT** have a license at this time and you may **NOT** use, modify or share it.  
+This project does **NOT** have a license at this time and you may **NOT** use, modify or share it.
 You can look [here](https://choosealicense.com/no-license/#for-users) for more information about unlicensed works.
 
 Copyright (C) 2017 Robin Hartmann. All rights reserved.
