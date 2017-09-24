@@ -14,12 +14,39 @@ A project setup for the creation of web apps using Typescript and npm packages.
 npm install --global gulp-cli
 ```
 
+### VS Code extensions
+
+This project is intended to be used with Visual Studio Code and the following extensions are recommended:
+
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint into VS Code
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) - TSLint for Visual Studio Code
+
 ## Getting it running
 
 ### Installing
 
 ```node
 npm install
+```
+
+### Linting
+
+#### TypeScript
+
+```node
+gulp lint:ts
+```
+
+#### JavaScript
+
+```node
+gulp lint:es
+```
+
+#### Both
+
+```node
+gulp lint
 ```
 
 ### Building
