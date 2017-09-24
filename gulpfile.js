@@ -1,9 +1,10 @@
 const gulp = require('gulp');
 const series = require('run-sequence');
 
-require('./gulp/compile');
 require('./gulp/bundle');
 require('./gulp/clean');
+require('./gulp/compile');
+require('./gulp/lint');
 require('./gulp/serve');
 
 gulp.task('build', done => series('compile', 'bundle', done));
