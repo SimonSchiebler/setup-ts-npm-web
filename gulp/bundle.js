@@ -9,7 +9,7 @@ const series = require('run-sequence');
 const source = require('vinyl-source-stream');
 const watchify = require('watchify');
 
-const othersSelector = [`${config.paths.compile}/**/*`, `!${config.paths.compile}/**/*.js`];
+const othersSelector = [`${config.paths.source}/**/*`, `!${config.globs.compileables}`];
 
 const log = gutil.log.bind(gutil, 'Browserify:');
 
