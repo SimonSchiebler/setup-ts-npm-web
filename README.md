@@ -83,10 +83,4 @@ gulp default
 
 ## License
 
-This project does **NOT** have a license at this time and you may **NOT** use, modify or share it.
-
-You can look [here](https://choosealicense.com/no-license/#for-users) for more information about unlicensed works.
-
-## Copyright
-
-Copyright (C) 2017 Robin Hartmann. All rights reserved.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
