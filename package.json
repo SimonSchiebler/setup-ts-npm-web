@@ -1,8 +1,7 @@
 {
-  "name": "ts-playground",
+  "name": "setup-ts-npm-web",
   "version": "0.0.1",
-  "description": "",
-  "main": "main.ts",
+  "description": "A project setup for the creation of web apps using Typescript and npm packages.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
