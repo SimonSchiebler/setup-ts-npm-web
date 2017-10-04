@@ -6,8 +6,8 @@ const config = {
   },
   paths: {
     compile: 'compile/',
-    dist: 'www/js',
-    entries: ['compile/main.js'],
+    dist: 'www/',
+    entries: ['compile/js/main.js'],
     source: 'src',
   },
   serve: {

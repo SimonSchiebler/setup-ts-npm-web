@@ -1,5 +1,3 @@
-
-
 'use strict';
 
 const spawn = require('cross-spawn');
@@ -9,7 +7,7 @@ module.exports = (context) => {
 
   const options = context.cmdLine.match(/--\w+=\w+/g);
   const deferral = context.requireCordovaModule('q').defer();
-  const params = ['build', 'test'].concat(options || []);
+  const params = ['build'].concat(options || []);
   const gulp = spawn('gulp', params, {
     // attach child process gulp to stdin, stdout and stderr
     stdio: [0, 1, 2],
