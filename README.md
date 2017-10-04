@@ -1,6 +1,6 @@
-# setup-ts-npm-web
+# setup-ts-npm-web - Cordova Version
 
-A project setup for the creation of web apps using Typescript and npm packages.
+A project setup for the creation of web apps using Cordova, Typescript and npm packages.
 
 ## Prerequisites
 
@@ -12,6 +12,10 @@ A project setup for the creation of web apps using Typescript and npm packages.
 
 ```node
 npm install --global gulp-cli
+```
+
+```cordova
+npm install --global cordova
 ```
 
 ### VS Code extensions
@@ -27,6 +31,9 @@ This project is intended to be used with Visual Studio Code and the following ex
 
 ```node
 npm install
+```
+```cordova
+cordova platforms add [your desired platform (android, ios ...)]
 ```
 
 ### Linting
@@ -68,7 +75,7 @@ gulp watch
 #### Open in browser
 
 ```node
-gulp serve
+cordova run Platform
 ```
 
 #### Watch for changes and open in browser
