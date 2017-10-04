@@ -5,9 +5,9 @@ const config = {
     bundle: 'bundle',
   },
   paths: {
-    compile: 'target/compile',
-    dist: 'target/dist',
-    entries: ['target/compile/main.js'],
+    compile: 'compile/',
+    dist: 'www/js',
+    entries: ['compile/main.js'],
     source: 'src',
   },
   serve: {
